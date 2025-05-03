@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Make the webpage responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title for the webpage -->
+    <title>Interactive Animations Demo</title>
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Heading for the page -->
+        <h1>Animation Preferences</h1>
+        
+        <!-- Section for user input preferences -->
+        <div class="preferences">
+            <!-- Checkbox for enabling Bounce Animation -->
+            <label>
+                <input type="checkbox" id="bounce-animation"> Enable Bounce Animation
+            </label>
+            <!-- Checkbox for enabling Rotate Animation -->
+            <label>
+                <input type="checkbox" id="rotate-animation"> Enable Rotate Animation
+            </label>
+            <!-- Input for selecting background color -->
+            <label>
+                Select Color:
+                <input type="color" id="bg-color" value="#ffffff"> <!-- Default color is white -->
+            </label>
+            <!-- Button to save user preferences -->
+            <button id="save-btn">Save Preferences</button>
+            <!-- Button to reset user preferences -->
+            <button id="reset-btn">Reset Preferences</button>
+        </div>
+        
+        <!-- Box where the animation will take place -->
+        <div class="animation-box" id="animated-element">
+            Watch me animate!
+        </div>
+        
+        <!-- Button to trigger animations manually -->
+        <button id="trigger-btn">Trigger Animation</button>
+    </div>
+
+    <!-- Link to an external JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
